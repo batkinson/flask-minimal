@@ -1,4 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+   <head>
+      <style>
+         a {
+            display: block
+         }
+      </style>
+   </head>
+
 Hello Flask &amp; Werkzeug!
+
+<a style="display: block;" href="/addone">Add!</a>
+
+
+{%- if num -%}
+You've added something {{num}} times. 
+<a href="/clear">Reset!</a>
+{%- endif -%}
+
 </html>
